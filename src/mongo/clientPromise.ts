@@ -17,6 +17,7 @@ if (!cached) {
   cached = (global as any).mongoose = { conn: null, promise: null };
 }
 
+// Función para conectar a la base de datos
 async function dbConnect(): Promise<mongoose.Connection> {
   if (cached.conn) {
     return cached.conn;
