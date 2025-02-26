@@ -27,6 +27,7 @@ const getStatusText = (status: ProjectStatus) => {
 };
 
 export const dynamic = "force-static";
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const { projects } = await getCurriculum();
