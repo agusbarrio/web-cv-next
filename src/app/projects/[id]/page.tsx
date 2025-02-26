@@ -28,6 +28,13 @@ const getStatusText = (status: ProjectStatus) => {
 
 export const dynamic = "force-static";
 
+export async function generateStaticParams() {
+  const { projects } = await getCurriculum();
+  return projects.map((project) => ({
+    id: project.id,
+  }));
+}
+
 export default async function ProjectPage({
   params,
 }: {

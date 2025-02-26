@@ -18,6 +18,13 @@ import Footer from "@/components/Footer";
 
 export const dynamic = "force-static";
 
+export async function generateStaticParams() {
+  const { experiences } = await getCurriculum();
+  return experiences.map((experience) => ({
+    id: experience.id,
+  }));
+}
+
 export default async function ExperiencePage({
   params,
 }: {
