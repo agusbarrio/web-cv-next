@@ -16,6 +16,8 @@ import _ from "lodash";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/Footer";
 
+export const dynamic = "force-static";
+
 export default async function ExperiencePage({
   params,
 }: {

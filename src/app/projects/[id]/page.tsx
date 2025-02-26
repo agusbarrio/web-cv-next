@@ -26,6 +26,8 @@ const getStatusText = (status: ProjectStatus) => {
   }
 };
 
+export const dynamic = "force-static";
+
 export default async function ProjectPage({
   params,
 }: {

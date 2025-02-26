@@ -43,6 +43,8 @@ function SkillIcon({ skill }: { skill: SkillType }) {
   return null;
 }
 
+export const dynamic = "force-static";
+
 export default async function Home() {
   const {
     skills,
