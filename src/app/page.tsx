@@ -27,6 +27,7 @@ import Footer from "@/components/Footer";
 import PersonalInfoCard from "@/components/dataDisplay/PersonalInfoCard";
 import AboutMe from "@/components/dataDisplay/AboutMe";
 import Projects from "@/components/dataDisplay/Projects";
+import Educations from "@/components/dataDisplay/Education";
 
 function SkillIcon({ skill }: { skill: SkillType }) {
   if (skill.simpleIcon) {
@@ -185,52 +186,6 @@ export default async function Home() {
           {!_.isEmpty(projects) && (
             <section id="projects" className="pt-24 md:ml-12 ">
               <Projects projects={projects}></Projects>
-              {/* <h2 className="text-2xl font-bold mb-6 text-blue-600">
-                Mis proyectos
-              </h2>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {projects
-                  .filter((project) => project.type === "PERSONAL")
-                  .map((project) => (
-                    <Card
-                      key={project.id}
-                      className="bg-gradient-to-br from-blue-800 to-sky-400 shadow-lg"
-                    >
-                      <CardHeader>
-                        <CardTitle className="text-black">
-                          {project.name}
-                        </CardTitle>
-                        <CardDescription className="text-black">
-                          {project.description}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="flex flex-wrap gap-2">
-                          {project.technologies.map((tech) => (
-                            <Badge
-                              key={tech}
-                              variant="outline"
-                              className="text-black border-black/30"
-                            >
-                              {skills.find((skill) => skill.id === tech)?.name}
-                            </Badge>
-                          ))}
-                        </div>
-                      </CardContent>
-                      <CardFooter>
-                        <Link href={`/projects/${project.id}`}>
-                          <Button
-                            variant="outline"
-                            className="text-black border-black/30 bg-transparent hover:bg-black/10"
-                          >
-                            Ver Detalles
-                          </Button>
-                        </Link>
-                      </CardFooter>
-                    </Card>
-                  ))}
-              </div> */}
             </section>
           )}
 
@@ -278,8 +233,9 @@ export default async function Home() {
 
           {/* Education Section */}
           {!_.isEmpty(educations) && (
-            <section id="education" className="pt-24">
-              <h2 className="text-2xl font-bold mb-6 text-blue-600">
+            <section id="education" className="pt-24 md:ml-12">
+              <Educations educations={educations}></Educations>
+              {/* <h2 className="text-2xl font-bold mb-6 text-blue-600">
                 Educación
               </h2>
 
@@ -309,7 +265,7 @@ export default async function Home() {
                     </CardContent>
                   </Card>
                 ))}
-              </div>
+              </div> */}
             </section>
           )}
 
