@@ -1,15 +1,26 @@
-import { Inter } from "next/font/google";
+import { Inter, Space_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
 import getCurriculum from "@/services/getCurriculum";
-import Header from "@/components/ui/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const spaceMono = Space_Mono({
+  subsets: ["latin"],
+  variable: "--font-space-mono",
+  weight: ["400", "700"],
+});
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  variable: "--font-open-sans",
+});
 
 export async function generateMetadata() {
   const curriculum = await getCurriculum();
   return {
     title: curriculum.personalInfo.fullName,
     description: curriculum.personalInfo.profession,
+    icons: {
+      icon: "/logo.png",
+    },
   };
 }
 
@@ -19,11 +30,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className="bg-black">
-      <head>
-        <link rel="icon" href="/logo.png" />
-      </head>
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.variable} ${spaceMono.variable} ${openSans.variable}`}
+    >
+      <body className="bg-black">{children}</body>
     </html>
   );
 }

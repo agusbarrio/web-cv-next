@@ -16,12 +16,35 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        spacemono: ["var(--font-space-mono)"],
+        opensans: ["var(--font-open-sans)"],
+      },
+      fontSize: {
+        "2xs": ["var(--font-size-2xs)", "var(--line-height-2xs)"],
+        "5xl": ["var(--font-size-5xl)", "var(--line-height-5xl)"],
+      },
+      width: {
+        68: "17rem",
+        104: "26rem",
+      },
+      height: {
+        104: "26rem",
+      },
+      maxWidth: {
+        120: "30rem",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      letterSpacing: {
+        "mono-6xl": "0.05em",
+      },
       colors: {
+        buttonGray: "var(--button-gray)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -52,8 +75,8 @@ const config: Config = {
           foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "var(--card)",
+          foreground: "var(--card-foreground)",
         },
       },
       borderRadius: {

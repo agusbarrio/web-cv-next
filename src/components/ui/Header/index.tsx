@@ -4,10 +4,10 @@
 //desktop muestra el logo y el menu de navegacion
 //tiene fondo negro y texto azul
 import Image from "next/image";
-
 import Link from "next/link";
 import { Squash as Hamburger } from "hamburger-react";
 import { useState } from "react";
+import { Button } from "../button";
 
 export default function Header() {
   const links = [
@@ -21,50 +21,47 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-black text-blue-600 fixed w-full top-0 z-50">
+    //difuminar fondo de la imagen de fondo
+    <header className="bg-transparent fixed w-full top-0 z-50 h-24">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              width={40}
-              height={40}
-              className="rounded-full"
-            />
-          </Link>
-
+        <div className="flex items-center justify-between h-24">
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="hover:text-blue-400 transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Mobile Navigation */}
-          <div className="md:hidden">
-            <Hamburger toggled={isOpen} toggle={setIsOpen} color="#3B82F6" />
-            {isOpen && (
-              <nav className="absolute top-16 left-0 right-0 bg-black p-4">
-                {links.map((link) => (
+          <nav className="w-full">
+            <button
+              onClick={() => setIsOpen((prev) => !prev)}
+              className="md:hidden text-white"
+              aria-label="ToggleMenu"
+            >
+              <Hamburger toggled={isOpen} />
+            </button>
+            <div
+              className={`
+              md:flex
+              md:gap-2
+              ${isOpen ? "block" : "hidden"}
+              md:relative absolute left-0 right-0
+              md:bg-transparent
+              md:p-4 p-4
+              md:justify-end
+            `}
+            >
+              {links.map((link) => (
+                <Button
+                  key={link.href}
+                  className="w-32"
+                  // className="md:inline-block block md:py-0 py-2 font-opensans"
+                >
                   <Link
-                    key={link.href}
                     href={link.href}
-                    className="block py-2 hover:text-blue-400 transition-colors"
                     onClick={() => setIsOpen(false)}
+                    className="w-full"
                   >
-                    {link.label}
+                    {link.label.toUpperCase()}
                   </Link>
-                ))}
-              </nav>
-            )}
-          </div>
+                </Button>
+              ))}
+            </div>
+          </nav>
         </div>
       </div>
     </header>

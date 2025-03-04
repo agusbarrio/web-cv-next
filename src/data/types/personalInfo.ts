@@ -15,4 +15,6 @@ export default interface PersonalInfoType {
   hobbies: HobbyType[];
   profession: string;
   description: string;
+  specialization: string;
+  shortDescription: string;
 }

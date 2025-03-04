@@ -1,40 +1,12 @@
-"use client";
-import { useEffect, useRef } from "react";
-
-export default function HeroVideo() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    const videoElement = videoRef.current;
-    if (!videoElement) return;
-
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === "visible") {
-        videoElement.currentTime = 0;
-        videoElement.play().catch(console.error);
-      }
-    };
-
-    // Reproducir inicialmente
-    videoElement.currentTime = 0;
-    videoElement.play().catch(console.error);
-
-    // Escuchar cuando el usuario vuelve a la página
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-    };
-  }, []);
-
+export default function HeroVideo({ className }: { className?: string }) {
   return (
-    <section className="scroll-m-10 w-full h-screen">
+    <section className={`scroll-m-10 w-full h-screen ${className}`}>
       <video
-        ref={videoRef}
         className="w-full h-full object-cover"
         muted
         playsInline
         preload="auto"
+        autoPlay
       >
         <source
           src="/movil-video.mp4"

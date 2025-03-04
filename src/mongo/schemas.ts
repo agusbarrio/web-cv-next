@@ -12,6 +12,8 @@ export const ProjectSchema = new Schema({
   startDate: String,
   endDate: String,
   features: [String],
+  image: String,
+  imageHover: String,
 });
 
 export const ExperienceSchema = new Schema({
@@ -38,6 +40,8 @@ export const PersonalInfoSchema = new Schema({
   birthDate: String,
   profession: String,
   description: String,
+  specialization: String,
+  shortDescription: String,
 });
 
 export const EducationSchema = new Schema({

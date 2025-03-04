@@ -7,8 +7,10 @@
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: #1d1d1d;
+    --card-foreground: #b1aeb8;
+
+    --button-gray: #555555;
 
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
@@ -33,6 +35,12 @@
     --ring: 221.2 83.2% 53.3%;
 
     --radius: 0.5rem;
+
+    --font-size-2xs: 0.665rem;
+    --line-height-2xs: 0.8rem;
+
+    --font-size-5xl: 2.5rem;
+    --line-height-5xl: 2.5rem;
   }
 }
 

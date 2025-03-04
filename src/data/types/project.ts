@@ -13,4 +13,6 @@ export default interface ProjectType {
   startDate: string;
   endDate?: string;
   logo?: string;
+  image: string;
+  imageHover: string;
 }

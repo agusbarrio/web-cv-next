@@ -155,7 +155,6 @@ export default async function ExperiencePage({
                             >
                               <Button
                                 variant="outline"
-                                size="sm"
                                 className="text-black border-black/30 hover:bg-black/10 bg-transparent"
                               >
                                 Ver Detalles
