@@ -17,4 +17,6 @@ export default interface PersonalInfoType {
   description: string;
   specialization: string;
   shortDescription: string;
+  image: string;
+  logo: string;
 }

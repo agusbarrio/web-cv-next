@@ -1,9 +1,8 @@
 import { cn } from "@/lib/utils";
-import ProjectType from "@/data/types/project";
 import PageTitle from "../ui/PageTitle";
-import ProjectCard from "./ProjectCard";
 import EducationType from "@/data/types/education";
 import EducationData from "./EducationData";
+import { Fragment } from "react";
 
 export default function Educations({
   educations,
@@ -17,12 +16,12 @@ export default function Educations({
       <PageTitle firstLine="MI" secondLine="EDUCACIÓN" />
       <div className="flex flex-col gap-4 max-w-4xl">
         {educations.map((education, index, array) => (
-          <>
-            <EducationData key={education.id} education={education} />
+          <Fragment key={education.id}>
+            <EducationData education={education} />
             {index !== array.length - 1 && (
               <hr className="w-full border-buttonGray my-4" />
             )}
-          </>
+          </Fragment>
         ))}
       </div>
     </div>

@@ -1,3 +1,5 @@
+import ProjectType from "@/data/types/project";
+import SkillType from "@/data/types/skill";
 import { type ClassValue, clsx } from "clsx";
 import moment from "moment";
 import { twMerge } from "tailwind-merge";
@@ -19,4 +21,14 @@ export function getDateString({
   const end = endDate ? moment(endDate) : undefined;
 
   return `${start.format(format)} - ${end ? end.format(format) : "Actualidad"}`;
+}
+
+export function getSkillsByProject(
+  project: ProjectType,
+  allSkills: SkillType[]
+) {
+  return project.technologies?.map((technology) => {
+    const skill = allSkills.find((skill) => skill.id === technology);
+    return skill;
+  });
 }

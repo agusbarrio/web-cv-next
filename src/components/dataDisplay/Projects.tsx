@@ -21,7 +21,7 @@ export default function Projects({
           <ProjectCard
             key={project.id}
             project={project}
-            className="w-full md:w-auto"
+            className="w-full md:w-auto h-104"
           />
         ))}
       </div>

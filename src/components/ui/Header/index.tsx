@@ -1,9 +1,4 @@
 "use client";
-//header responsivo.
-//mobile muestra el logo que navega a la home y un menu hamburguesa
-//desktop muestra el logo y el menu de navegacion
-//tiene fondo negro y texto azul
-import Image from "next/image";
 import Link from "next/link";
 import { Squash as Hamburger } from "hamburger-react";
 import { useState } from "react";
@@ -22,7 +17,11 @@ export default function Header() {
 
   return (
     //difuminar fondo de la imagen de fondo
-    <header className="bg-transparent fixed w-full top-0 z-50 h-24">
+    <header
+      className={`${
+        isOpen ? "bg-black" : "bg-transparent"
+      } md:bg-transparent fixed w-full top-0 z-50 h-24 `}
+    >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-24">
           {/* Desktop Navigation */}
@@ -36,6 +35,7 @@ export default function Header() {
             </button>
             <div
               className={`
+              bg-black
               md:flex
               md:gap-2
               ${isOpen ? "block" : "hidden"}
@@ -46,11 +46,7 @@ export default function Header() {
             `}
             >
               {links.map((link) => (
-                <Button
-                  key={link.href}
-                  className="w-32"
-                  // className="md:inline-block block md:py-0 py-2 font-opensans"
-                >
+                <Button key={link.href} className="w-32">
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}

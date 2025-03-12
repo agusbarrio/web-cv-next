@@ -19,7 +19,7 @@ export async function generateMetadata() {
     title: curriculum.personalInfo.fullName,
     description: curriculum.personalInfo.profession,
     icons: {
-      icon: "/logo.png",
+      icon: curriculum.page.logo,
     },
   };
 }

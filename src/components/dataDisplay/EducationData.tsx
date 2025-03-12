@@ -22,7 +22,10 @@ export default function EducationData({
           {education.institution?.toUpperCase()}
         </p>
         <p className="text-sm font-inter text-white">
-          {getDateString({ startDate: education.startDate })?.toUpperCase()}
+          {getDateString({
+            startDate: education.startDate,
+            endDate: education.endDate,
+          })?.toUpperCase()}
         </p>
       </div>
       <p className="text-sm font-inter text-white">

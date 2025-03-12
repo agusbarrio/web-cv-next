@@ -18,11 +18,11 @@ export default function PersonalInfoCard({
       <div className="flex flex-col items-center gap-4">
         <div className="flex flex-row items-center gap-2">
           <Image
-            src="/Logo-web-blanco.svg"
+            src={personalInfo.logo}
             alt={"logo"}
             width={45}
             height={45}
-            className="rounded-full"
+            className="rounded-full object-cover"
           />
           <div className="flex flex-col">
             <h2 className="text-white font-spacemono text-xl">
@@ -32,10 +32,11 @@ export default function PersonalInfoCard({
         </div>
         <div className="w-full bg-gradient-to-tl to-sky-400 from-blue-800 rounded-2xl">
           <Image
-            src="/yo-Photoroom.png"
+            src={personalInfo.image}
             alt={personalInfo.fullName}
             width={300}
             height={300}
+            className="object-cover"
           />
         </div>
 

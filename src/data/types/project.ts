@@ -15,4 +15,5 @@ export default interface ProjectType {
   logo?: string;
   image: string;
   imageHover: string;
+  imagePlatform: string;
 }

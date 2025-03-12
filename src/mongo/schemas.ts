@@ -1,5 +1,11 @@
 import mongoose, { Schema, Types } from "mongoose";
 
+export const PageSchema = new Schema({
+  heroVideoDesktop: String,
+  heroVideoMobile: String,
+  logo: String,
+});
+
 export const ProjectSchema = new Schema({
   id: String,
   type: String,
@@ -14,6 +20,8 @@ export const ProjectSchema = new Schema({
   features: [String],
   image: String,
   imageHover: String,
+  logo: String,
+  imagePlatform: String,
 });
 
 export const ExperienceSchema = new Schema({
@@ -42,6 +50,8 @@ export const PersonalInfoSchema = new Schema({
   description: String,
   specialization: String,
   shortDescription: String,
+  image: String,
+  logo: String,
 });
 
 export const EducationSchema = new Schema({
@@ -61,11 +71,17 @@ export const SkillSchema = new Schema({
   image: String,
   simpleIcon: String,
   category: String,
+  lucideIcon: String,
 });
 
 export const HobbieSchema = new Schema({
   name: String,
   description: String,
+});
+
+export const CategorySchema = new Schema({
+  id: String,
+  name: String,
 });
 
 export const CurriculumSchema = new Schema({
@@ -79,8 +95,22 @@ export const CurriculumSchema = new Schema({
   projects: [ProjectSchema],
   educations: [EducationSchema],
   skills: [SkillSchema],
+  categories: [CategorySchema],
+  page: PageSchema,
 });
 
 //model
 export const CurriculumModel =
   mongoose.models.Curriculum || mongoose.model("Curriculum", CurriculumSchema);
+
+export const ContactSchema = new Schema({
+  name: { type: String, required: true },
+  email: { type: String, required: true },
+  message: { type: String, required: true },
+  phone: String,
+  companyName: String,
+  createdAt: { type: Date, default: Date.now },
+});
+
+export const ContactModel =
+  mongoose.models.Contact || mongoose.model("Contact", ContactSchema);
