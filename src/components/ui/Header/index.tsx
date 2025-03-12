@@ -49,10 +49,10 @@ export default function Header() {
                 <Link
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="w-full"
+                  className="w-32"
                   key={link.href}
                 >
-                  <Button className="w-32">{link.label.toUpperCase()}</Button>
+                  <Button className="w-full">{link.label.toUpperCase()}</Button>
                 </Link>
               ))}
             </div>
