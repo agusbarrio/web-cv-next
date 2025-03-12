@@ -24,9 +24,11 @@ export default function AboutMe({
           {personalInfo.description.toUpperCase()}
         </p>
         <div>
-          <Button variant="highlight" endIcon={<Download size={12} />}>
-            DESCARGAR CV
-          </Button>
+          <a href={personalInfo.curriculumFileUrl} target="_blank">
+            <Button variant="highlight" endIcon={<Download size={12} />}>
+              DESCARGAR CV
+            </Button>
+          </a>
         </div>
       </div>
     </div>

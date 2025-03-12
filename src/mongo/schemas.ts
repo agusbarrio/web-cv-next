@@ -52,6 +52,7 @@ export const PersonalInfoSchema = new Schema({
   shortDescription: String,
   image: String,
   logo: String,
+  curriculumFileUrl: String,
 });
 
 export const EducationSchema = new Schema({

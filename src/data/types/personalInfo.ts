@@ -19,4 +19,5 @@ export default interface PersonalInfoType {
   shortDescription: string;
   image: string;
   logo: string;
+  curriculumFileUrl: string;
 }
