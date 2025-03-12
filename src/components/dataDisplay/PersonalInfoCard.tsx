@@ -57,21 +57,21 @@ export default function PersonalInfoCard({
         {/* contacto */}
         <div className="flex flex-col gap-2">
           <div className="flex flex-row gap-4">
-            <Button variant="icon">
-              <a href={personalInfo.github} target="_blank">
+            <a href={personalInfo.github} target="_blank">
+              <Button variant="icon">
                 <SiGithub />
-              </a>
-            </Button>
-            <Button variant="icon">
-              <a href={personalInfo.linkedin} target="_blank">
+              </Button>
+            </a>
+            <a href={personalInfo.linkedin} target="_blank">
+              <Button variant="icon">
                 <SiLinkedin />
-              </a>
-            </Button>
-            <Button variant="icon">
-              <a href={`mailto:${personalInfo.email}`} target="_blank">
+              </Button>
+            </a>
+            <a href={`mailto:${personalInfo.email}`} target="_blank">
+              <Button variant="icon">
                 <SiGmail />
-              </a>
-            </Button>
+              </Button>
+            </a>
           </div>
         </div>
         <Link href="/#contact" className="w-full">

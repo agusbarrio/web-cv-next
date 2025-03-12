@@ -46,15 +46,14 @@ export default function Header() {
             `}
             >
               {links.map((link) => (
-                <Button key={link.href} className="w-32">
-                  <Link
-                    href={link.href}
-                    onClick={() => setIsOpen(false)}
-                    className="w-full"
-                  >
-                    {link.label.toUpperCase()}
-                  </Link>
-                </Button>
+                <Link
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="w-full"
+                  key={link.href}
+                >
+                  <Button className="w-32">{link.label.toUpperCase()}</Button>
+                </Link>
               ))}
             </div>
           </nav>

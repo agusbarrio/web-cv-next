@@ -83,11 +83,11 @@ export default function ProjectData({
               className="object-cover"
             />
           </div>
-          <Button variant="highlight" className="mx-auto">
-            <a href={project.link} target="_blank">
+          <a href={project.link} target="_blank">
+            <Button variant="highlight" className="mx-auto">
               VISITAR PLATAFORMA
-            </a>
-          </Button>
+            </Button>
+          </a>
         </div>
       </div>
     </div>
