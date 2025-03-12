@@ -5,6 +5,7 @@ import SkillType from "@/data/types/skill";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import SiIcon from "../ui/siIcon";
+import { isEmpty } from "lodash";
 
 export default function ProjectData({
   project,
@@ -51,13 +52,17 @@ export default function ProjectData({
           <p className="text-sm font-inter text-white">
             {project.description?.toUpperCase()}
           </p>
-          <hr className="w-full border-buttonGray my-4" />
-          <h2 className="text-2xl font-inter text-white font-bold">
-            RESPONSABILIDADES
-          </h2>
-          <p className="text-sm font-inter text-white">
-            {project.responsibilities?.join(" ")}
-          </p>
+          {!isEmpty(project.responsibilities) && (
+            <>
+              <hr className="w-full border-buttonGray my-4" />
+              <h2 className="text-2xl font-inter text-white font-bold">
+                RESPONSABILIDADES
+              </h2>
+              <p className="text-sm font-inter text-white">
+                {project.responsibilities?.join(" ")}
+              </p>
+            </>
+          )}
           <hr className="w-full border-buttonGray my-4" />
           <h2 className="text-2xl font-inter text-white font-bold">
             TECNOLOGÍAS

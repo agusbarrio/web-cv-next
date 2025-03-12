@@ -2,6 +2,7 @@ import { cn, getDateString } from "@/lib/utils";
 import ExperienceType from "@/data/types/experience";
 import ProjectType from "@/data/types/project";
 import ProjectCard from "./ProjectCard";
+import { isEmpty } from "lodash";
 
 export default function ExperienceData({
   experience,
@@ -34,12 +35,16 @@ export default function ExperienceData({
       <p className="text-sm font-inter text-card-foreground">
         {experience.description}
       </p>
-      <h4 className="text-sm font-inter text-white font-bold">
-        RESPONSABILIDADES
-      </h4>
-      <p className="text-sm font-inter text-card-foreground">
-        {experience.responsibilities?.join(" ")}
-      </p>
+      {!isEmpty(experience.responsibilities) && (
+        <>
+          <h4 className="text-sm font-inter text-white font-bold">
+            RESPONSABILIDADES
+          </h4>
+          <p className="text-sm font-inter text-card-foreground">
+            {experience.responsibilities?.join(" ")}
+          </p>
+        </>
+      )}
       <h4 className="text-sm font-inter text-white font-bold">
         PROYECTOS ASIGNADOS
       </h4>
