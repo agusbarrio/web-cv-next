@@ -1,5 +1,5 @@
 import { Inter, Space_Mono, Open_Sans } from "next/font/google";
-import "./globals.css";
+import "../../globals.css";
 import getCurriculum from "@/services/getCurriculum";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -13,11 +13,15 @@ const openSans = Open_Sans({
   variable: "--font-open-sans",
 });
 
-export async function generateMetadata() {
+/* current project */
+export async function generateMetadata({ params }: { params: { id: string } }) {
   const curriculum = await getCurriculum();
+  const project = curriculum.projects.find(
+    (project) => project.id === params.id
+  );
   return {
-    title: curriculum.personalInfo.fullName,
-    description: curriculum.personalInfo.profession,
+    title: `Proyecto - ${project?.name}`,
+    description: project?.description,
     icons: {
       icon: curriculum.page.logo,
     },
