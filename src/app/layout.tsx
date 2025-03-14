@@ -17,7 +17,7 @@ export async function generateMetadata() {
   const curriculum = await getCurriculum();
   return {
     title: curriculum.personalInfo.fullName,
-    description: curriculum.personalInfo.profession,
+    description: curriculum.page.metaDescription,
     icons: {
       icon: curriculum.page.logo,
     },

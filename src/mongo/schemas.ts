@@ -4,6 +4,7 @@ export const PageSchema = new Schema({
   heroVideoDesktop: String,
   heroVideoMobile: String,
   logo: String,
+  metaDescription: String,
 });
 
 export const ProjectSchema = new Schema({
