@@ -5,6 +5,7 @@ export const PageSchema = new Schema({
   heroVideoMobile: String,
   logo: String,
   metaDescription: String,
+  googleAnalyticsId: String,
 });
 
 export const ProjectSchema = new Schema({

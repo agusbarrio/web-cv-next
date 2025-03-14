@@ -1,6 +1,8 @@
 import { Inter, Space_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 import getCurriculum from "@/services/getCurriculum";
+import GoogleAnalyticsScript from "@/components/scripts/GoogleAnalyticsScript";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceMono = Space_Mono({
@@ -24,17 +26,24 @@ export async function generateMetadata() {
   };
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const curriculum = await getCurriculum();
+
   return (
     <html
       lang="es"
       suppressHydrationWarning
       className={`${inter.variable} ${spaceMono.variable} ${openSans.variable}`}
     >
+      {curriculum.page.googleAnalyticsId && (
+        <GoogleAnalyticsScript
+          googleAnalyticsId={curriculum.page.googleAnalyticsId}
+        />
+      )}
       <body className="bg-black">{children}</body>
     </html>
   );

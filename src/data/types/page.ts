@@ -3,4 +3,5 @@ export default interface PageType {
   heroVideoMobile: string;
   logo: string;
   metaDescription: string;
+  googleAnalyticsId?: string;
 }
