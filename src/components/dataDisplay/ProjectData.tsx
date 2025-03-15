@@ -80,7 +80,7 @@ export default function ProjectData({
           </div>
         </div>
         <div className="flex flex-col gap-8 md:sticky md:top-24 h-fit">
-          <div className="relative w-80 h-52 mx-auto">
+          <div className="relative w-80 md:w-104 h-52 mx-auto">
             <Image
               src={project.imagePlatform}
               alt={project.name}
