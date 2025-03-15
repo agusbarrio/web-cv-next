@@ -23,7 +23,7 @@ export default function ProjectData({
           <Image
             src={project.logo}
             alt={project.name}
-            className="w-32 h-32 hidden md:block object-cover"
+            className="w-32 h-32 hidden md:block object-contain"
             width={100}
             height={100}
           />
