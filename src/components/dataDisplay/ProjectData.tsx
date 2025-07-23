@@ -74,7 +74,16 @@ export default function ProjectData({
           </h2>
           <div className="flex flex-wrap gap-2">
             {getSkillsByProject(project, allSkills).map((skill) => (
-              <Button key={skill?.id} variant="icon">
+              <Button key={skill?.id} variant="icon" className="relative group">
+                <span
+                  className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 
+                   opacity-0 group-hover:opacity-100 
+                   bg-gray-800 text-white text-xs rounded py-1 px-2 
+                   pointer-events-none 
+                   transition-opacity duration-300 whitespace-nowrap z-10"
+                >
+                  {skill?.name}
+                </span>
                 <SkillIcon skill={skill} />
               </Button>
             ))}
