@@ -63,7 +63,7 @@ export default function ProjectData({
                   className="text-sm font-inter text-card-foreground"
                   key={responsibility}
                 >
-                  {responsibility}
+                  {responsibility?.toUpperCase()}
                 </p>
               ))}
             </>
