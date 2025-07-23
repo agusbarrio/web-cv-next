@@ -1,12 +1,11 @@
 import React from "react";
 import * as SiIcons from "@icons-pack/react-simple-icons";
 
-export default function SiIcon({
-  icon,
-  ...props
-}: {
+export type SiIconProps = {
   icon?: keyof typeof SiIcons;
-} & React.SVGProps<SVGSVGElement>) {
+} & React.SVGProps<SVGSVGElement>;
+
+export default function SiIcon({ icon, ...props }: SiIconProps) {
   if (!icon) {
     return <></>;
   }

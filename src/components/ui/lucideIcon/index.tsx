@@ -1,12 +1,11 @@
 import React from "react";
 import * as LucideIcons from "lucide-react";
 
-export default function SiIcon({
-  icon,
-  ...props
-}: {
+export type LucideIconProps = {
   icon?: keyof typeof LucideIcons;
-} & React.SVGProps<SVGSVGElement>) {
+} & React.SVGProps<SVGSVGElement>;
+
+export default function LucideIcon({ icon, ...props }: LucideIconProps) {
   if (!icon) {
     return <></>;
   }

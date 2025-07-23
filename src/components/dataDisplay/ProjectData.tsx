@@ -4,8 +4,8 @@ import PageTitle from "../ui/PageTitle";
 import SkillType from "@/data/types/skill";
 import Image from "next/image";
 import { Button } from "../ui/button";
-import SiIcon from "../ui/siIcon";
 import { isEmpty } from "lodash";
+import SkillIcon from "./SkillIcon";
 
 export default function ProjectData({
   project,
@@ -59,7 +59,7 @@ export default function ProjectData({
                 RESPONSABILIDADES
               </h2>
               <p className="text-sm font-inter text-white">
-                {project.responsibilities?.join(" ")}
+                {project.responsibilities?.join("\n\n")}
               </p>
             </>
           )}
@@ -69,12 +69,8 @@ export default function ProjectData({
           </h2>
           <div className="flex flex-wrap gap-2">
             {getSkillsByProject(project, allSkills).map((skill) => (
-              <Button
-                key={skill?.id}
-                variant="icon"
-                className="pointer-events-none"
-              >
-                <SiIcon icon={skill?.simpleIcon} />
+              <Button key={skill?.id} variant="icon">
+                <SkillIcon skill={skill} />
               </Button>
             ))}
           </div>

@@ -1,0 +1,410 @@
+{
+  "_id": {
+    "$oid": "673e231e415914fb121f1016"
+  },
+  "page": {
+    "heroVideoDesktop": "https://agusbarrio.github.io/media-contents/public/videos/video.mp4",
+    "heroVideoMobile": "https://agusbarrio.github.io/media-contents/public/videos/movil-video.mp4",
+    "logo": "https://agusbarrio.github.io/media-contents/public/logos/logo-fondo.png",
+    "metaDescription": "Soy Agustín Adolfo Barrio Eastman, desarrollador Full Stack especializado en Next.js y Node.js. Explora mis proyectos y experiencia en desarrollo web escalable.",
+    "googleAnalyticsId": "G-37WEKRTK83"
+  },
+  "personalInfo": {
+    "fullName": "Agustín Barrio",
+    "profession": "Desarrollador Full Stack",
+    "email": "agusbarrioeastman@gmail.com",
+    "location": "Ramos Mejía, Buenos Aires, Argentina",
+    "nativeLanguage": "Español",
+    "englishLevel": "BASIC",
+    "linkedin": "https://www.linkedin.com/in/agustin-adolfo-barrio-eastman",
+    "github": "https://github.com/agusbarrio",
+    "birthDate": "2000-06-12",
+    "description": "Me apasiona resolver problemas mediante soluciones tecnológicas innovadoras, optimizando procesos y mejorando la experiencia del usuario. Disfruto trabajar en proyectos desafiantes que combinan desarrollo backend y frontend. Siempre busco aprender y mejorar mis habilidades, explorando nuevas herramientas y tendencias en el desarrollo de software. Estoy abierto a conectar con profesionales que compartan mi interés por la tecnología, la ingeniería de software y la innovación.",
+    "shortDescription": "Desarrollador de software con experiencia en el diseño, desarrollo e implementación de aplicaciones web y sistemas escalables. ",
+    "specialization": " JavaScript, TypeScript, React, Next.js, Node.js y NestJS, trabajando con bases de datos SQL y NoSQL (MySQL, MongoDB) y arquitectura de microservicios.",
+    "image": "https://agusbarrio.github.io/media-contents/public/images/yo.png",
+    "logo": "https://agusbarrio.github.io/media-contents/public/logos/logo-web-blanco.svg",
+    "curriculumFileUrl": "https://agusbarrio.github.io/media-contents/public/files/Agustin_Adolfo_Barrio_Eastman_CV.pdf"
+  },
+  "hobbies": [
+    {
+      "name": "Música",
+      "description": "Músico autodidacta, especializado en bajo y guitarra. Participa activamente en su comunidad tocando en eventos y servicios."
+    },
+    {
+      "name": "Deportes",
+      "description": "Entusiasta del fútbol y del hockey sobre hielo, practicando regularmente estas disciplinas como parte de un estilo de vida saludable."
+    },
+    {
+      "name": "Aprendizaje",
+      "description": "Apasionado por la tecnología, con interés en electrónica y ensamblaje de computadoras. Siempre en búsqueda de nuevas habilidades técnicas."
+    }
+  ],
+  "experiences": [
+    {
+      "id": "solunika",
+      "lero": "lero",
+      "company": "Solúnika",
+      "position": "Desarrollador de Software",
+      "startDate": "2022-06",
+      "description": "Desarrollador full stack contribuyendo a la creación e implementación de soluciones tecnológicas innovadoras, incluyendo plataformas empresariales y de gestión.",
+      "projects": ["clara", "hubeet"],
+      "technologies": ["js", "ts", "docker"],
+      "responsibilities": [],
+      "url": "https://www.solunika.com/"
+    }
+  ],
+  "projects": [
+    {
+      "id": "hubeet",
+      "type": "PROFESSIONAL",
+      "name": "Hubeet",
+      "logo": "https://agusbarrio.github.io/media-contents/public/projects/hubeet/logo.png",
+      "description": "Plataforma SaaS diseñada para optimizar la colaboración y la productividad empresarial, facilitando la gestión de equipos y proyectos.",
+      "responsibilities": [
+        "Diseño y desarrollo del backend inicial utilizando Node.js y Express.",
+        "Implementación de las funcionalidades principales del frontend en React.",
+        "Mantenimiento y desarrollo continuo para mejorar la experiencia del usuario."
+      ],
+      "status": "PRODUCTION",
+      "technologies": ["js", "ts", "docker"],
+      "link": "https://hubeet.com",
+      "startDate": "2022-06",
+      "image": "https://agusbarrio.github.io/media-contents/public/projects/hubeet/image.png",
+      "imageHover": "https://agusbarrio.github.io/media-contents/public/projects/hubeet/hover.png",
+      "imagePlatform": "https://agusbarrio.github.io/media-contents/public/projects/hubeet/platform.png"
+    },
+    {
+      "id": "clara",
+      "type": "PROFESSIONAL",
+      "name": "Clara",
+      "logo": "https://agusbarrio.github.io/media-contents/public/projects/clara/logo.png",
+      "description": "Clara es una plataforma SaaS (Company OS) que permite a startups y fondos incorporar empresas, gestionar equity (cap table, ESOP), automatizar documentos legales y acceder a servicios bancarios globales desde una única plataforma.",
+      "responsibilities": [
+        "Desarrollo de una nueva versión del generador de documentos, mejorando la precisión y eficiencia del sistema."
+      ],
+      "status": "PRODUCTION",
+      "technologies": ["js", "ts", "docker"],
+      "link": "https://clara.co",
+      "startDate": "2023-04",
+      "endDate": "2024-11",
+      "image": "https://agusbarrio.github.io/media-contents/public/projects/clara/image.png",
+      "imageHover": "https://agusbarrio.github.io/media-contents/public/projects/clara/hover.png",
+      "imagePlatform": "https://agusbarrio.github.io/media-contents/public/projects/clara/platform.png"
+    },
+    {
+      "id": "elevators-control",
+      "type": "PERSONAL",
+      "name": "Control de Ascensores",
+      "logo": "https://agusbarrio.github.io/media-contents/public/projects/elevators-control/logo.svg",
+      "description": "Prototipo en desarrollo que permite el monitoreo en tiempo real de datos provenientes de tableros de ascensores, ideal para empresas de mantenimiento.",
+      "responsibilities": ["test", "test2"],
+      "technologies": ["js", "ts", "docker"],
+      "status": "DEVELOPMENT",
+      "features": [
+        "Gestión avanzada de organizaciones y ascensores por parte de los administradores.",
+        "Visualización intuitiva de datos en tiempo real para usuarios finales."
+      ],
+      "link": "https://elevators-control.vercel.app",
+      "startDate": "2024-08",
+      "image": "https://agusbarrio.github.io/media-contents/public/projects/elevators-control/image.png",
+      "imageHover": "https://agusbarrio.github.io/media-contents/public/projects/elevators-control/hover.png",
+      "imagePlatform": "https://agusbarrio.github.io/media-contents/public/projects/elevators-control/platform.png"
+    },
+    {
+      "id": "edu-organizer",
+      "type": "PERSONAL",
+      "name": "Escuela de Vida",
+      "logo": "https://agusbarrio.github.io/media-contents/public/projects/edu-organizer/logo.svg",
+      "description": "Sistema de gestión de asistencia y cursos diseñado para organizaciones como iglesias, optimizando la administración y participación.",
+      "responsibilities": [],
+      "technologies": ["nextjs", "express", "mysql", "docker", "nginx"],
+      "status": "PRODUCTION",
+      "features": [
+        "Registro y gestión de organizaciones, cursos y estudiantes.",
+        "Herramienta para que profesores tomen asistencia mediante enlaces únicos y credenciales seguras."
+      ],
+      "link": "https://escueladevida.vercel.app",
+      "startDate": "2023-07",
+      "endDate": "2024-05",
+      "image": "https://agusbarrio.github.io/media-contents/public/projects/edu-organizer/image.png",
+      "imageHover": "https://agusbarrio.github.io/media-contents/public/projects/edu-organizer/hover.png",
+      "imagePlatform": "https://agusbarrio.github.io/media-contents/public/projects/edu-organizer/platform.png"
+    },
+    {
+      "id": "web-cv",
+      "type": "PERSONAL",
+      "name": "Portfolio Web",
+      "logo": "https://agusbarrio.github.io/media-contents/public/projects/web-cv/logo.svg",
+      "description": "Portafolio digital diseñado para presentar habilidades, experiencia y proyectos",
+      "responsibilities": [],
+      "technologies": ["nextjs", "mongodb"],
+      "status": "PRODUCTION",
+      "features": [
+        "Presentacion de informacion laboral",
+        "Páginas por cada proyecto",
+        "Formulario de contacto"
+      ],
+      "link": "https://barrioeastman.com.ar",
+      "startDate": "2024-07",
+      "image": "https://agusbarrio.github.io/media-contents/public/projects/web-cv/image.png",
+      "imageHover": "https://agusbarrio.github.io/media-contents/public/projects/web-cv/hover.png",
+      "imagePlatform": "https://agusbarrio.github.io/media-contents/public/projects/web-cv/platform.png"
+    }
+  ],
+  "skills": [
+    {
+      "id": "html",
+      "name": "HTML",
+      "image": "",
+      "simpleIcon": "siHtml5",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "image": "",
+      "simpleIcon": "siCss3",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "js",
+      "name": "JavaScript",
+      "image": "",
+      "simpleIcon": "siJavascript",
+      "category": "LANGUAGES"
+    },
+    {
+      "id": "ts",
+      "name": "TypeScript",
+      "image": "",
+      "simpleIcon": "siTypescript",
+      "category": "LANGUAGES"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "image": "",
+      "simpleIcon": "siReact",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "image": "",
+      "simpleIcon": "siNodedotjs",
+      "category": "BACKEND"
+    },
+    {
+      "id": "express",
+      "name": "Express.js",
+      "image": "",
+      "simpleIcon": "siExpress",
+      "category": "BACKEND"
+    },
+    {
+      "id": "nestjs",
+      "name": "NestJS",
+      "image": "",
+      "simpleIcon": "siNestjs",
+      "category": "BACKEND"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "image": "",
+      "simpleIcon": "siMysql",
+      "category": "DATABASES"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "image": "",
+      "simpleIcon": "siMongodb",
+      "category": "DATABASES"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "image": "",
+      "simpleIcon": "siDocker",
+      "category": "DEVOPS"
+    },
+    {
+      "id": "graphql",
+      "name": "GraphQL",
+      "image": "",
+      "simpleIcon": "siGraphql",
+      "category": "BACKEND"
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "image": "",
+      "simpleIcon": "siRedis",
+      "category": "DATABASES"
+    },
+    {
+      "id": "nginx",
+      "name": "Nginx",
+      "image": "",
+      "simpleIcon": "siNginx",
+      "category": "DEVOPS"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "image": "",
+      "simpleIcon": "siNextdotjs",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "gitlab",
+      "name": "Gitlab CI/CD",
+      "image": "",
+      "simpleIcon": "siGitlab",
+      "category": "DEVOPS"
+    },
+    {
+      "id": "mqtt",
+      "name": "MQTT",
+      "image": "",
+      "simpleIcon": "siMqtt",
+      "category": "IOT"
+    },
+    {
+      "id": "esp8266",
+      "name": "ESP8266",
+      "image": "",
+      "simpleIcon": "",
+      "category": "IOT",
+      "lucideIcon": "Microchip"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "image": "",
+      "simpleIcon": "siGit",
+      "category": "TOOLS"
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "image": "",
+      "simpleIcon": "siPostman",
+      "category": "TOOLS"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "image": "",
+      "simpleIcon": "siFigma",
+      "category": "TOOLS"
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "image": "",
+      "simpleIcon": "siJira",
+      "category": "TOOLS"
+    },
+    {
+      "id": "storybook",
+      "name": "Storybook",
+      "image": "",
+      "simpleIcon": "siStorybook",
+      "category": "TOOLS"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "image": "",
+      "simpleIcon": "siNotion",
+      "category": "TOOLS"
+    },
+    {
+      "id": "vscode",
+      "name": "VSCode",
+      "image": "https://agusbarrio.github.io/media-contents/svgs/vs-code.svg",
+      "simpleIcon": "",
+      "category": "TOOLS"
+    },
+    {
+      "id": "sass",
+      "name": "Sass",
+      "image": "",
+      "simpleIcon": "siSass",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "redux",
+      "name": "React Redux",
+      "image": "",
+      "simpleIcon": "siRedux",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "mui",
+      "name": "MUI",
+      "image": "",
+      "simpleIcon": "siMui",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "ws",
+      "name": "Socket.io",
+      "image": "",
+      "simpleIcon": "siSocketdotio",
+      "category": "BACKEND"
+    }
+  ],
+  "educations": [
+    {
+      "id": "unlam",
+      "institution": "Universidad Nacional de La Matanza",
+      "program": "Ingeniería Informática",
+      "description": "Carrera universitaria enfocada en el desarrollo de habilidades técnicas y teóricas en informática, incluyendo programación, matemáticas, física y sistemas operativos.",
+      "startDate": "2024-06",
+      "type": "UNIVERSITY"
+    },
+    {
+      "id": "codo-a-codo",
+      "institution": "Codo a Codo - GCBA",
+      "program": "Desarrollo Web Full Stack",
+      "description": "Formación intensiva en desarrollo web, adquiriendo competencias en tecnologías como HTML, CSS, JavaScript, Node.js y MySQL para el desarrollo de aplicaciones web.",
+      "startDate": "2022-03",
+      "endDate": "2022-07",
+      "type": "COURSE"
+    }
+  ],
+  "categories": [
+    {
+      "id": "BACKEND",
+      "name": "Backend"
+    },
+    {
+      "id": "FRONTEND",
+      "name": "Frontend"
+    },
+    {
+      "id": "LANGUAGES",
+      "name": "Lenguajes"
+    },
+    {
+      "id": "TOOLS",
+      "name": "Herramientas"
+    },
+    {
+      "id": "DATABASES",
+      "name": "Bases de datos"
+    },
+    {
+      "id": "DEVOPS",
+      "name": "DevOps"
+    },
+    {
+      "id": "IOT",
+      "name": "IoT"
+    }
+  ]
+}

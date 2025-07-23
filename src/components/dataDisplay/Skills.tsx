@@ -7,6 +7,8 @@ import SiIcon from "../ui/siIcon";
 import LucideIcon from "../ui/lucideIcon";
 import { map } from "lodash";
 import Image from "next/image";
+import CustomIcon from "../ui/customIcon";
+import SkillIcon from "./SkillIcon";
 
 export default function Skills({
   skillsByCategory,
@@ -32,24 +34,7 @@ export default function Skills({
                   className="flex items-center gap-2"
                   key={skill.id || skill.name}
                 >
-                  {skill.simpleIcon && (
-                    <SiIcon icon={skill.simpleIcon} className="text-white" />
-                  )}
-                  {skill.image && (
-                    <Image
-                      src={skill.image}
-                      alt={skill.name}
-                      width={24}
-                      height={24}
-                      className="object-cover"
-                    />
-                  )}
-                  {skill.lucideIcon && (
-                    <LucideIcon
-                      icon={skill.lucideIcon}
-                      className="text-white"
-                    />
-                  )}
+                  <SkillIcon skill={skill} />
                   <span className="text-card-foreground">{skill.name}</span>
                 </div>
               ))}

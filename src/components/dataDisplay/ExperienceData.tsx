@@ -41,7 +41,7 @@ export default function ExperienceData({
             RESPONSABILIDADES
           </h4>
           <p className="text-sm font-inter text-card-foreground">
-            {experience.responsibilities?.join(" ")}
+            {experience.responsibilities?.join("\n\n")}
           </p>
         </>
       )}

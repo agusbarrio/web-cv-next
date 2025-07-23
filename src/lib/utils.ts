@@ -27,8 +27,12 @@ export function getSkillsByProject(
   project: ProjectType,
   allSkills: SkillType[]
 ) {
-  return project.technologies?.map((technology) => {
-    const skill = allSkills.find((skill) => skill.id === technology);
-    return skill;
-  });
+  return (
+    project.technologies
+      ?.map((technology) => {
+        const skill = allSkills.find((skill) => skill.id === technology);
+        return skill;
+      })
+      ?.filter((skill) => !!skill) || []
+  );
 }
