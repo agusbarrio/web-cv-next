@@ -9,7 +9,7 @@ export default function SkillIcon({ skill }: { skill: SkillType }) {
         skill?.simpleIcon
           ? {
               icon: skill?.simpleIcon,
-              className: "text-white",
+              className: "text-card-foreground",
             }
           : undefined
       }
@@ -17,7 +17,7 @@ export default function SkillIcon({ skill }: { skill: SkillType }) {
         skill?.lucideIcon
           ? {
               icon: skill?.lucideIcon,
-              className: "text-white",
+              className: "text-card-foreground",
             }
           : undefined
       }

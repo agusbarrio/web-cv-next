@@ -28,7 +28,7 @@ export default function EducationData({
           })?.toUpperCase()}
         </p>
       </div>
-      <p className="text-sm font-inter text-white">
+      <p className="text-sm font-inter text-card-foreground">
         {education.description?.toUpperCase()}
       </p>
     </div>

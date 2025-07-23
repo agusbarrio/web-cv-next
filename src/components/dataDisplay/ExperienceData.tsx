@@ -33,16 +33,21 @@ export default function ExperienceData({
         </p>
       </div>
       <p className="text-sm font-inter text-card-foreground">
-        {experience.description}
+        {experience.description?.toUpperCase()}
       </p>
       {!isEmpty(experience.responsibilities) && (
         <>
           <h4 className="text-sm font-inter text-white font-bold">
             RESPONSABILIDADES
           </h4>
-          <p className="text-sm font-inter text-card-foreground">
-            {experience.responsibilities?.join("\n\n")}
-          </p>
+          {experience.responsibilities?.map((responsibility) => (
+            <p
+              className="text-sm font-inter text-card-foreground"
+              key={responsibility}
+            >
+              {responsibility}
+            </p>
+          ))}
         </>
       )}
       <h4 className="text-sm font-inter text-white font-bold">

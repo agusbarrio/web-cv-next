@@ -49,7 +49,7 @@ export default function ProjectData({
               })?.toUpperCase()}
             </p>
           </div>
-          <p className="text-sm font-inter text-white">
+          <p className="text-sm font-inter text-card-foreground">
             {project.description?.toUpperCase()}
           </p>
           {!isEmpty(project.responsibilities) && (
@@ -58,9 +58,14 @@ export default function ProjectData({
               <h2 className="text-2xl font-inter text-white font-bold">
                 RESPONSABILIDADES
               </h2>
-              <p className="text-sm font-inter text-white">
-                {project.responsibilities?.join("\n\n")}
-              </p>
+              {project.responsibilities?.map((responsibility) => (
+                <p
+                  className="text-sm font-inter text-card-foreground"
+                  key={responsibility}
+                >
+                  {responsibility}
+                </p>
+              ))}
             </>
           )}
           <hr className="w-full border-buttonGray my-4" />
