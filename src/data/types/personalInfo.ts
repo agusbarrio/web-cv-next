@@ -10,7 +10,8 @@ export default interface PersonalInfoType {
   github?: string;
   location: string;
   nativeLanguage: string;
-  englishLevel?: "BASIC" | "INTERMEDIATE" | "ADVANCED";
+  /** From JSON / CMS (e.g. `"BASIC"`). */
+  englishLevel?: string;
   birthDate: string;
   hobbies: HobbyType[];
   profession: string;

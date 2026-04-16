@@ -1,0 +1,570 @@
+{
+  "page": {
+    "heroVideoDesktop": "https://agusbarrio.github.io/media-contents/public/videos/video.mp4",
+    "heroVideoMobile": "https://agusbarrio.github.io/media-contents/public/videos/movil-video.mp4",
+    "logo": "https://agusbarrio.github.io/media-contents/public/logos/logo-fondo.png",
+    "metaDescription": "Soy Agustín Adolfo Barrio Eastman, desarrollador Full Stack especializado en Next.js y Node.js. Explora mis proyectos y experiencia en desarrollo web escalable.",
+    "googleAnalyticsId": "G-37WEKRTK83"
+  },
+  "personalInfo": {
+    "fullName": "Agustín Barrio",
+    "profession": "Desarrollador Full Stack",
+    "email": "agusbarrioeastman@gmail.com",
+    "location": "Ramos Mejía, Buenos Aires, Argentina",
+    "nativeLanguage": "Español",
+    "englishLevel": "BASIC",
+    "linkedin": "https://www.linkedin.com/in/agustin-adolfo-barrio-eastman",
+    "github": "https://github.com/agusbarrio",
+    "birthDate": "2000-06-12",
+    "description": "Me apasiona resolver problemas mediante soluciones tecnológicas innovadoras, optimizando procesos y mejorando la experiencia del usuario. Disfruto trabajar en proyectos desafiantes que combinan desarrollo backend y frontend. Siempre busco aprender y mejorar mis habilidades, explorando nuevas herramientas y tendencias en el desarrollo de software. Estoy abierto a conectar con profesionales que compartan mi interés por la tecnología, la ingeniería de software y la innovación.",
+    "shortDescription": "Desarrollador de software con experiencia en el diseño, desarrollo e implementación de aplicaciones web y sistemas escalables. ",
+    "specialization": " JavaScript, TypeScript, React, Next.js, Node.js y NestJS, trabajando con bases de datos SQL y NoSQL (MySQL, MongoDB) y arquitectura de microservicios.",
+    "image": "https://agusbarrio.github.io/media-contents/public/images/yo.png",
+    "logo": "https://agusbarrio.github.io/media-contents/public/logos/logo-web-blanco.svg",
+    "curriculumFileUrl": "https://agusbarrio.github.io/media-contents/public/files/Agustin_Adolfo_Barrio_Eastman_CV.pdf"
+  },
+  "hobbies": [
+    {
+      "name": "Música",
+      "description": "Músico autodidacta, especializado en bajo y guitarra. Participa activamente en su comunidad tocando en eventos y servicios."
+    },
+    {
+      "name": "Deportes",
+      "description": "Entusiasta del fútbol y del hockey sobre hielo, practicando regularmente estas disciplinas como parte de un estilo de vida saludable."
+    },
+    {
+      "name": "Aprendizaje",
+      "description": "Apasionado por la tecnología, con interés en electrónica y ensamblaje de computadoras. Siempre en búsqueda de nuevas habilidades técnicas."
+    }
+  ],
+  "experiences": [
+    {
+      "id": "solunika",
+      "company": "Solúnika",
+      "position": "Desarrollador de Software",
+      "startDate": "2022-06",
+      "description": "En Solúnika trabajé como desarrollador de software, participando en todo el ciclo de desarrollo de aplicaciones, desde análisis de requerimientos hasta implementación, pruebas y mantenimiento. Mi rol combinó backend, frontend e infraestructura, enfocándome en la calidad, eficiencia y estabilidad de los sistemas. Desarrollé APIs y servicios críticos, implementé interfaces intuitivas y módulos reutilizables, y gestioné entornos y pipelines para asegurar disponibilidad y buen desempeño de las aplicaciones.",
+      "projects": ["clara", "hubeet"],
+      "technologies": ["js", "ts", "docker"],
+      "responsibilities": [],
+      "url": "https://www.solunika.com/"
+    }
+  ],
+  "projects": [
+    {
+      "id": "hubeet",
+      "type": "PROFESSIONAL",
+      "name": "Hubeet",
+      "logo": "https://agusbarrio.github.io/media-contents/public/projects/hubeet/logo.png",
+      "description": "Plataforma SaaS diseñada para optimizar la colaboración y la productividad empresarial implementando soluciones basadas en IA.",
+      "responsibilities": [
+        "Diseño y desarrollo de APIs RESTful y GraphQL robustas y seguras utilizando Node.js con Express y NestJS, incluyendo autenticación, autorización y manejo de errores.",
+        "Modelado y gestión de bases de datos relacionales, optimización de consultas y migraciones.",
+        "Implementación de lógica de negocio compleja para la automatización, gestión e integración de chatbots.",
+        "Implementación de lógica de negocio, validaciones y procesamiento de datos en backend para garantizar integridad y funcionalidad del sistema.",
+        "Desarrollo y mantenimiento de microservicios independientes que se comunican mediante APIs REST.",
+        "Implementación de sistemas de caché con Redis para mejorar tiempos de respuesta y reducir carga en la base de datos.",
+        "Administración de infraestructura en VPS.",
+        "Configuración e implementación de pipelines CI/CD con Docker y GitLab CI/CD para automatizar despliegues.",
+        "Configuración y uso de Nginx como reverse proxy para exponer servicios, enrutar tráfi co y mejorar la seguridad."
+      ],
+      "status": "PRODUCTION",
+      "technologies": [
+        "html",
+        "css",
+        "js",
+        "ts",
+        "react",
+        "nextjs",
+        "node",
+        "express",
+        "nestjs",
+        "mysql",
+        "postgres",
+        "mongodb",
+        "docker",
+        "graphql",
+        "redis",
+        "nginx",
+        "gitlab",
+        "git",
+        "postman",
+        "figma",
+        "storybook",
+        "mui",
+        "ws"
+      ],
+      "link": "https://hubeet.com",
+      "startDate": "2022-06",
+      "image": "https://agusbarrio.github.io/media-contents/public/projects/hubeet/image.png",
+      "imageHover": "https://agusbarrio.github.io/media-contents/public/projects/hubeet/hover.png",
+      "imagePlatform": "https://agusbarrio.github.io/media-contents/public/projects/hubeet/platform.png"
+    },
+    {
+      "id": "clara",
+      "type": "PROFESSIONAL",
+      "name": "Clara",
+      "logo": "https://agusbarrio.github.io/media-contents/public/projects/clara/logo.png",
+      "description": "Clara es una plataforma SaaS (Company OS) que permite a startups y fondos incorporar empresas, gestionar equity (cap table, ESOP), automatizar documentos legales y acceder a servicios bancarios globales desde una única plataforma.",
+      "responsibilities": [
+        "Desarrollo de módulos frontend usando React con arquitectura de micro-frontends y Module Federation.",
+        "Diseño e implementación de interfaces responsive y accesibles.",
+        "Implementación y optimización de funcionalidades para carga, edición y gestión de documentos y plantillas.",
+        "Mejora de rendimiento y reducción de re-renders para optimizar tiempos de carga y experiencia de usuario.",
+        "Integración del frontend con APIs GraphQL para manipulación dinámica de datos.",
+        "Trabajo colaborativo bajo metodologías ágiles, utilizando Git para control de versiones y herramientas como Jira y Confluence para gestión de tareas y documentación técnica."
+      ],
+      "status": "PRODUCTION",
+      "technologies": [
+        "html",
+        "css",
+        "js",
+        "ts",
+        "react",
+        "nextjs",
+        "graphql",
+        "git",
+        "figma",
+        "jira",
+        "storybook",
+        "sass",
+        "redux",
+        "mui"
+      ],
+      "link": "https://clara.co",
+      "startDate": "2023-04",
+      "endDate": "2024-11",
+      "image": "https://agusbarrio.github.io/media-contents/public/projects/clara/image.png",
+      "imageHover": "https://agusbarrio.github.io/media-contents/public/projects/clara/hover.png",
+      "imagePlatform": "https://agusbarrio.github.io/media-contents/public/projects/clara/platform.png"
+    },
+    {
+      "id": "elevators-control",
+      "type": "PERSONAL",
+      "name": "Control de Ascensores",
+      "logo": "https://agusbarrio.github.io/media-contents/public/projects/elevators-control/logo.svg",
+      "description": "Prototipo en desarrollo que permite el monitoreo en tiempo real de datos provenientes de tableros de ascensores, ideal para empresas de mantenimiento.",
+      "responsibilities": [
+        "Comunicación segura mediante MQTT sobre mqtts:// utilizando EMQX como broker.",
+        "Soporte para actualizaciones OTA (Over-The-Air) y almacenamiento de configuración separado mediante NVS personalizado.",
+        "Proyecto modular estructurado con PlatformIO y librerías internas para manejo de WiFi, MQTT, OTA y cifrado.",
+        "Desarrollo del backend en NestJS, encargado de la autenticación de dispositivos con JWT, gestión de usuarios y recepción de datos.",
+        "Desarrollo del frontend en Next.js con dashboard para monitoreo en tiempo real y gestión de dispositivos.",
+        "Despliegue en contenedores Docker, con Nginx como reverse proxy."
+      ],
+      "technologies": [
+        "html",
+        "css",
+        "ts",
+        "react",
+        "nextjs",
+        "node",
+        "nestjs",
+        "mysql",
+        "docker",
+        "nginx",
+        "mqtt",
+        "esp32",
+        "git",
+        "postman",
+        "notion",
+        "mui"
+      ],
+      "status": "DEVELOPMENT",
+      "features": [
+        "Gestión avanzada de organizaciones y ascensores por parte de los administradores.",
+        "Visualización intuitiva de datos en tiempo real para usuarios finales."
+      ],
+      "link": "https://elevators-control.vercel.app",
+      "startDate": "2024-08",
+      "image": "https://agusbarrio.github.io/media-contents/public/projects/elevators-control/image.png",
+      "imageHover": "https://agusbarrio.github.io/media-contents/public/projects/elevators-control/hover.png",
+      "imagePlatform": "https://agusbarrio.github.io/media-contents/public/projects/elevators-control/platform.png"
+    },
+    {
+      "id": "edu-organizer",
+      "type": "PERSONAL",
+      "name": "Organizador educativo",
+      "logo": "https://agusbarrio.github.io/media-contents/public/projects/edu-organizer/logo.svg",
+      "description": "Sistema de gestión de asistencia y cursos diseñado para organizaciones educativas.",
+      "responsibilities": [
+        "Desarrollo del backend en Node.js utilizando Express y Sequelize con base de datos MySQL.",
+        "Implementación de control de acceso por roles y autenticación segura con JWT.",
+        "Implementación de almacenamiento de archivos.",
+        "Despliegue del backend en un VPS con Docker, Nginx como reverse proxy y configuración de DNS con Cloudflare.",
+        "Desarrollo del frontend en Next.js, desplegado en Vercel.",
+        "Separación de entornos QA y producción, gestión de configuración vía variables de entorno.",
+        "Arquitectura diseñada para escalar a múltiples organizaciones."
+      ],
+      "technologies": [
+        "html",
+        "css",
+        "js",
+        "react",
+        "nextjs",
+        "node",
+        "express",
+        "mysql",
+        "docker",
+        "nginx",
+        "git",
+        "postman",
+        "notion",
+        "mui"
+      ],
+      "status": "PRODUCTION",
+      "features": [
+        "Registro y gestión de organizaciones, cursos y estudiantes.",
+        "Herramienta para que profesores tomen asistencia mediante enlaces únicos y credenciales seguras."
+      ],
+      "link": "https://edu-organizer-qa.vercel.app/",
+      "startDate": "2023-07",
+      "endDate": "2024-05",
+      "image": "https://agusbarrio.github.io/media-contents/public/projects/edu-organizer/image.png",
+      "imageHover": "https://agusbarrio.github.io/media-contents/public/projects/edu-organizer/hover.png",
+      "imagePlatform": "https://agusbarrio.github.io/media-contents/public/projects/edu-organizer/platform.png"
+    },
+    {
+      "id": "web-cv",
+      "type": "PERSONAL",
+      "name": "Portfolio Web",
+      "logo": "https://agusbarrio.github.io/media-contents/public/projects/web-cv/logo.svg",
+      "description": "Portafolio digital diseñado para presentar habilidades, experiencia y proyectos.",
+      "responsibilities": [
+        "Desarrollo del frontend usando React y Next.js con Tailwind CSS para una interfaz limpia, responsive y accesible.",
+        "Implementación de páginas estáticas generadas en tiempo de build con Next.js, obteniendo la información dinámica desde MongoDB.",
+        "Uso de API Routes de Next.js para manejar la lógica del backend integrada, como el envío de formulario de contacto.",
+        "Optimización del rendimiento y SEO para mejorar tiempos de carga y visibilidad en motores de búsqueda.",
+        "Configuración y despliegue continuo en Vercel.",
+        "Gestión del código fuente con Git para mantener un desarrollo ordenado y controlado."
+      ],
+      "technologies": [
+        "html",
+        "css",
+        "ts",
+        "react",
+        "nextjs",
+        "node",
+        "mongodb",
+        "git",
+        "tailwind"
+      ],
+      "status": "PRODUCTION",
+      "features": [
+        "Presentacion de informacion laboral",
+        "Páginas por cada proyecto",
+        "Formulario de contacto"
+      ],
+      "link": "https://barrioeastman.com.ar",
+      "startDate": "2024-07",
+      "image": "https://agusbarrio.github.io/media-contents/public/projects/web-cv/image.png",
+      "imageHover": "https://agusbarrio.github.io/media-contents/public/projects/web-cv/hover.png",
+      "imagePlatform": "https://agusbarrio.github.io/media-contents/public/projects/web-cv/platform.png"
+    }
+  ],
+  "skills": [
+    {
+      "id": "html",
+      "name": "HTML",
+      "image": "",
+      "simpleIcon": "siHtml5",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "image": "",
+      "simpleIcon": "siCss3",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "js",
+      "name": "JavaScript",
+      "image": "",
+      "simpleIcon": "siJavascript",
+      "category": "LANGUAGES"
+    },
+    {
+      "id": "ts",
+      "name": "TypeScript",
+      "image": "",
+      "simpleIcon": "siTypescript",
+      "category": "LANGUAGES"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "image": "",
+      "simpleIcon": "siReact",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "image": "",
+      "simpleIcon": "siNodedotjs",
+      "category": "BACKEND"
+    },
+    {
+      "id": "express",
+      "name": "Express.js",
+      "image": "",
+      "simpleIcon": "siExpress",
+      "category": "BACKEND"
+    },
+    {
+      "id": "nestjs",
+      "name": "NestJS",
+      "image": "",
+      "simpleIcon": "siNestjs",
+      "category": "BACKEND"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "image": "",
+      "simpleIcon": "siMysql",
+      "category": "DATABASES"
+    },
+    {
+      "id": "postgres",
+      "name": "PostgreSQL",
+      "image": "",
+      "simpleIcon": "siPostgresql",
+      "category": "DATABASES"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "image": "",
+      "simpleIcon": "siMongodb",
+      "category": "DATABASES"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "image": "",
+      "simpleIcon": "siDocker",
+      "category": "DEVOPS"
+    },
+    {
+      "id": "graphql",
+      "name": "GraphQL",
+      "image": "",
+      "simpleIcon": "siGraphql",
+      "category": "BACKEND"
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "image": "",
+      "simpleIcon": "siRedis",
+      "category": "DATABASES"
+    },
+    {
+      "id": "nginx",
+      "name": "Nginx",
+      "image": "",
+      "simpleIcon": "siNginx",
+      "category": "DEVOPS"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "image": "",
+      "simpleIcon": "siNextdotjs",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "gitlab",
+      "name": "Gitlab CI/CD",
+      "image": "",
+      "simpleIcon": "siGitlab",
+      "category": "DEVOPS"
+    },
+    {
+      "id": "mqtt",
+      "name": "MQTT",
+      "image": "",
+      "simpleIcon": "siMqtt",
+      "category": "IOT"
+    },
+    {
+      "id": "esp8266",
+      "name": "ESP8266",
+      "image": "",
+      "simpleIcon": "",
+      "category": "IOT",
+      "lucideIcon": "Microchip"
+    },
+    {
+      "id": "esp32",
+      "name": "ESP32",
+      "image": "",
+      "simpleIcon": "",
+      "category": "IOT",
+      "lucideIcon": "Microchip"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "image": "",
+      "simpleIcon": "siGit",
+      "category": "TOOLS"
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "image": "",
+      "simpleIcon": "siPostman",
+      "category": "TOOLS"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "image": "",
+      "simpleIcon": "siFigma",
+      "category": "TOOLS"
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "image": "",
+      "simpleIcon": "siJira",
+      "category": "TOOLS"
+    },
+    {
+      "id": "storybook",
+      "name": "Storybook",
+      "image": "",
+      "simpleIcon": "siStorybook",
+      "category": "TOOLS"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "image": "",
+      "simpleIcon": "siNotion",
+      "category": "TOOLS"
+    },
+    {
+      "id": "sass",
+      "name": "Sass",
+      "image": "",
+      "simpleIcon": "siSass",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "redux",
+      "name": "React Redux",
+      "image": "",
+      "simpleIcon": "siRedux",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "mui",
+      "name": "MUI",
+      "image": "",
+      "simpleIcon": "siMui",
+      "category": "FRONTEND"
+    },
+    {
+      "id": "ws",
+      "name": "Socket.io",
+      "image": "",
+      "simpleIcon": "siSocketdotio",
+      "category": "BACKEND"
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind",
+      "image": "",
+      "simpleIcon": "siTailwindcss",
+      "category": "FRONTEND"
+    }
+  ],
+  "educations": [
+    {
+      "id": "utn",
+      "institution": "Universidad Tecnológica Nacional",
+      "program": "Ingeniería en sistemas de información",
+      "description": "Carrera universitaria enfocada en el desarrollo de habilidades técnicas y teóricas en sistemas informáticos, incluyendo programación, matemáticas, física y sistemas operativos.",
+      "startDate": "2025-03",
+      "type": "UNIVERSITY"
+    },
+    {
+      "id": "codo-a-codo",
+      "institution": "Codo a Codo - GCBA",
+      "program": "Desarrollo Web Full Stack",
+      "description": "Formación intensiva en desarrollo web, adquiriendo competencias en tecnologías como HTML, CSS, JavaScript, Node.js y MySQL para el desarrollo de aplicaciones web.",
+      "startDate": "2022-03",
+      "endDate": "2022-07",
+      "type": "COURSE"
+    }
+  ],
+  "categories": [
+    {
+      "id": "BACKEND",
+      "name": "Backend"
+    },
+    {
+      "id": "FRONTEND",
+      "name": "Frontend"
+    },
+    {
+      "id": "LANGUAGES",
+      "name": "Lenguajes"
+    },
+    {
+      "id": "TOOLS",
+      "name": "Herramientas"
+    },
+    {
+      "id": "DATABASES",
+      "name": "Bases de datos"
+    },
+    {
+      "id": "DEVOPS",
+      "name": "DevOps"
+    },
+    {
+      "id": "IOT",
+      "name": "IoT"
+    }
+  ],
+  "helpers": {
+    "technologiesList": [
+      "html",
+      "css",
+      "js",
+      "ts",
+      "react",
+      "node",
+      "express",
+      "nestjs",
+      "mysql",
+      "postgres",
+      "mongodb",
+      "docker",
+      "graphql",
+      "redis",
+      "nginx",
+      "nextjs",
+      "gitlab",
+      "mqtt",
+      "esp8266",
+      "esp32",
+      "git",
+      "postman",
+      "figma",
+      "jira",
+      "storybook",
+      "notion",
+      "sass",
+      "redux",
+      "mui",
+      "ws",
+      "tailwind"
+    ]
+  }
+}

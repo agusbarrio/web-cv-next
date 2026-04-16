@@ -1,6 +1,3 @@
-import * as SiIcons from "@icons-pack/react-simple-icons";
-import * as LucideIcons from "lucide-react";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { ImageProps } from "next/image";
 
 export default interface SkillType {
@@ -8,6 +5,8 @@ export default interface SkillType {
   name: string;
   image?: ImageProps["src"];
   category: string;
-  simpleIcon?: keyof typeof SiIcons;
-  lucideIcon?: keyof typeof LucideIcons;
+  /** Icon name as in `@icons-pack/react-simple-icons` (e.g. `SiReact` or `siReact` from JSON). */
+  simpleIcon?: string;
+  /** Lucide icon component name (e.g. `Microchip`). */
+  lucideIcon?: string;
 }

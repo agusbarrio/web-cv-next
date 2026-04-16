@@ -2,13 +2,15 @@ export type ProjectStatus = "PRODUCTION" | "DEVELOPMENT" | "ARCHIVED";
 
 export default interface ProjectType {
   id: string;
-  type: "PERSONAL" | "PROFESSIONAL";
+  /** From JSON / CMS; compare to literals at runtime (e.g. `"PERSONAL"`). */
+  type: string;
   name: string;
   description: string;
   responsibilities: string[];
-  status: ProjectStatus;
+  /** From JSON / CMS (e.g. `"PRODUCTION"`). */
+  status: string;
   technologies: string[];
-  features: string[];
+  features?: string[];
   link: string;
   startDate: string;
   endDate?: string;

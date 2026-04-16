@@ -5,5 +5,6 @@ export default interface EducationType {
   description: string;
   startDate: string;
   endDate?: string;
-  type: "UNIVERSITY" | "COURSE";
+  /** From JSON / CMS (e.g. `"UNIVERSITY"`). */
+  type: string;
 }
