@@ -9,7 +9,7 @@ import Educations from "@/components/dataDisplay/Educations";
 import Experiences from "@/components/dataDisplay/Experiences";
 import Skills from "@/components/dataDisplay/Skills";
 import Contact from "@/components/dataDisplay/Contact";
-import { isLocale } from "@/i18n/locales";
+import { isLocale, Locale } from "@/i18n/locales";
 import { notFound } from "next/navigation";
 
 export const dynamic = "force-static";
@@ -24,6 +24,8 @@ export default async function Home({
     notFound();
   }
 
+  const typedLocale = locale as Locale;
+
   const {
     skills,
     experiences,
@@ -37,7 +39,7 @@ export default async function Home({
 
   return (
     <div className="min-h-screen bg-black">
-      <Header locale={locale} />
+      <Header locale={typedLocale} />
       <HeroVideo page={page} />
       <main className="mb-12 md:mb-0 px-12 flex flex-col md:flex-row md:gap-4">
         <section
@@ -47,7 +49,7 @@ export default async function Home({
           <PersonalInfoCard
             personalInfo={personalInfo}
             className="w-64"
-            locale={locale}
+            locale={typedLocale}
           />
         </section>
         <div>
@@ -55,7 +57,7 @@ export default async function Home({
             id="about"
             className="pt-24 flex justify-center md:h-screen items-center md:pl-12"
           >
-            <AboutMe personalInfo={personalInfo}></AboutMe>
+            <AboutMe personalInfo={personalInfo} locale={typedLocale}></AboutMe>
           </section>
 
           {!_.isEmpty(experiences) && (
@@ -63,14 +65,14 @@ export default async function Home({
               <Experiences
                 experiences={experiences}
                 projects={projects}
-                locale={locale}
+                locale={typedLocale}
               ></Experiences>
             </section>
           )}
 
           {!_.isEmpty(projects) && (
             <section id="projects" className="pt-24 md:ml-12 ">
-              <Projects projects={projects} locale={locale}></Projects>
+              <Projects projects={projects} locale={typedLocale}></Projects>
             </section>
           )}
 
@@ -79,13 +81,14 @@ export default async function Home({
               <Skills
                 skillsByCategory={skillsByCategory}
                 categories={categories}
+                locale={typedLocale}
               ></Skills>
             </section>
           )}
 
           {!_.isEmpty(educations) && (
             <section id="education" className="pt-24 md:ml-12">
-              <Educations educations={educations}></Educations>
+              <Educations educations={educations} locale={typedLocale}></Educations>
             </section>
           )}
 
@@ -93,7 +96,7 @@ export default async function Home({
             id="contact"
             className="pt-24 flex justify-center md:h-screen items-center md:pl-12 md:justify-start"
           >
-            <Contact className="w-full"></Contact>
+            <Contact className="w-full" locale={typedLocale}></Contact>
           </section>
         </div>
       </main>

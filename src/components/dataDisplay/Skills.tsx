@@ -4,19 +4,27 @@ import SkillType from "@/data/types/skill";
 import { Card } from "../ui/card";
 import CategoryType from "@/data/types/category";
 import SkillIcon from "./SkillIcon";
+import { Locale } from "@/i18n/locales";
+import { uiByLocale } from "@/i18n/ui";
 
 export default function Skills({
   skillsByCategory,
+  locale,
   className,
   categories,
 }: {
   skillsByCategory: Record<string, SkillType[]>;
+  locale: Locale;
   categories: CategoryType[];
   className?: string;
 }) {
+  const t = uiByLocale[locale];
   return (
     <div className={cn("flex flex-col gap-12", className)}>
-      <PageTitle firstLine="MIS" secondLine="HABILIDADES" />
+      <PageTitle
+        firstLine={t.mySkillsFirst.toUpperCase()}
+        secondLine={t.mySkillsSecond.toUpperCase()}
+      />
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,16rem)] gap-8">
         {categories.map((category) => {
           const categorySkills = skillsByCategory[category.id] ?? [];

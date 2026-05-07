@@ -3,7 +3,7 @@ import Header from "@/components/ui/Header";
 import ProjectData from "@/components/dataDisplay/ProjectData";
 import { notFound } from "next/navigation";
 import getCurriculum from "@/services/getCurriculum";
-import { isLocale } from "@/i18n/locales";
+import { isLocale, Locale } from "@/i18n/locales";
 
 type PageParams = {
   locale: string;
@@ -31,6 +31,7 @@ export default async function ProjectPage({
   if (!isLocale(locale)) {
     notFound();
   }
+  const typedLocale = locale as Locale;
 
   const { projects, skills } = await getCurriculum(locale);
   const project = projects.find((project) => project.id === id);
@@ -41,10 +42,10 @@ export default async function ProjectPage({
 
   return (
     <div className="min-h-screen bg-black">
-      <Header locale={locale} />
+      <Header locale={typedLocale} />
       <main className="px-12 flex flex-col md:flex-row md:gap-4 p-8">
         <section id="project" className="pt-24 md:ml-12">
-          <ProjectData project={project} allSkills={skills} />
+          <ProjectData project={project} allSkills={skills} locale={typedLocale} />
         </section>
       </main>
     </div>

@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { Locale } from "@/i18n/locales";
+import { uiByLocale } from "@/i18n/ui";
 
 export default function ProjectCard({
   project,
@@ -10,9 +12,10 @@ export default function ProjectCard({
   className,
 }: {
   project: ProjectType;
-  locale: string;
+  locale: Locale;
   className?: string;
 }) {
+  const t = uiByLocale[locale];
   return (
     <div
       className={cn("relative group overflow-hidden rounded-2xl", className)}
@@ -44,12 +47,12 @@ export default function ProjectCard({
         <div className="flex gap-4 mt-4">
           <Link href={`/${locale}/projects/${project.id}`}>
             <Button variant="highlight" className="mt-0 md:mt-4">
-              VER MÁS
+              {t.viewMore.toUpperCase()}
             </Button>
           </Link>
           <a href={project.link} target="_blank">
             <Button variant="highlight" className="mt-0 md:mt-4">
-              PLATAFORMA
+              {t.platform.toUpperCase()}
             </Button>
           </a>
         </div>

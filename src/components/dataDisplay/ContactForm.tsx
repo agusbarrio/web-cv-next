@@ -4,8 +4,11 @@ import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { useEffect, useRef, useState } from "react";
 import Toast from "../ui/toast";
+import { Locale } from "@/i18n/locales";
+import { uiByLocale } from "@/i18n/ui";
 
-export default function ContactForm() {
+export default function ContactForm({ locale }: { locale: Locale }) {
+  const t = uiByLocale[locale];
   const [isLoading, setIsLoading] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
   const [message, setMessage] = useState("");
@@ -30,14 +33,14 @@ export default function ContactForm() {
     })
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Error al enviar el mensaje");
+          throw new Error(t.messageSentError);
         }
       })
       .then(() => {
-        setMessage("Mensaje enviado correctamente");
+        setMessage(t.messageSentOk);
       })
       .catch((err) => {
-        setMessage("Error al enviar el mensaje");
+        setMessage(t.messageSentError);
       })
       .finally(() => {
         setIsLoading(false);
@@ -52,7 +55,7 @@ export default function ContactForm() {
           <Input
             type="text"
             name="name"
-            label="Nombre"
+            label={t.name}
             className="col-span-1"
             required
             disabled={isLoading}
@@ -60,7 +63,7 @@ export default function ContactForm() {
           <Input
             type="text"
             name="companyName"
-            label="Empresa"
+            label={t.company}
             className="col-span-1"
             disabled={isLoading}
           />
@@ -75,14 +78,14 @@ export default function ContactForm() {
           <Input
             type="text"
             name="phone"
-            label="Teléfono"
+            label={t.phone}
             className="col-span-1"
             disabled={isLoading}
           />
           <Input
             type="text"
             name="message"
-            label="Mensaje"
+            label={t.message}
             className="col-span-2"
             required
             disabled={isLoading}
@@ -101,7 +104,7 @@ export default function ContactForm() {
               )
             }
           >
-            ENVIAR MENSAJE
+            {t.sendMessage.toUpperCase()}
           </Button>
         </div>
       </form>

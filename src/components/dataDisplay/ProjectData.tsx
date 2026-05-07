@@ -6,16 +6,21 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { isEmpty } from "lodash";
 import SkillIcon from "./SkillIcon";
+import { Locale } from "@/i18n/locales";
+import { uiByLocale } from "@/i18n/ui";
 
 export default function ProjectData({
   project,
   allSkills,
+  locale,
   className,
 }: {
   project: ProjectType;
   allSkills: SkillType[];
+  locale: Locale;
   className?: string;
 }) {
+  const t = uiByLocale[locale];
   return (
     <div className="flex flex-col gap-12 ">
       <div className="flex flex-row gap-8 items-center">
@@ -29,7 +34,7 @@ export default function ProjectData({
           />
         )}
         <PageTitle
-          firstLine="PROYECTO"
+          firstLine={t.project.toUpperCase()}
           secondLine={project.name?.toUpperCase()}
           element="h1"
         ></PageTitle>
@@ -56,7 +61,7 @@ export default function ProjectData({
             <>
               <hr className="w-full border-buttonGray my-4" />
               <h2 className="text-2xl font-inter text-white font-bold">
-                RESPONSABILIDADES
+                {t.responsibilities.toUpperCase()}
               </h2>
               {project.responsibilities?.map((responsibility) => (
                 <p
@@ -70,7 +75,7 @@ export default function ProjectData({
           )}
           <hr className="w-full border-buttonGray my-4" />
           <h2 className="text-2xl font-inter text-white font-bold">
-            TECNOLOGÍAS
+            {t.technologies.toUpperCase()}
           </h2>
           <div className="flex flex-wrap gap-2">
             {getSkillsByProject(project, allSkills).map((skill) => (
@@ -100,7 +105,7 @@ export default function ProjectData({
           </div>
           <a href={project.link} target="_blank">
             <Button variant="highlight" className="mx-auto">
-              VISITAR PLATAFORMA
+              {t.visitPlatform.toUpperCase()}
             </Button>
           </a>
         </div>

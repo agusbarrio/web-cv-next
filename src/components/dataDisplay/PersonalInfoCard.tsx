@@ -5,6 +5,8 @@ import { SiGithub, SiGmail, SiLinkedin } from "@icons-pack/react-simple-icons";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { Locale } from "@/i18n/locales";
+import { uiByLocale } from "@/i18n/ui";
 
 export default function PersonalInfoCard({
   personalInfo,
@@ -12,9 +14,10 @@ export default function PersonalInfoCard({
   className,
 }: {
   personalInfo: PersonalInfoType;
-  locale: string;
+  locale: Locale;
   className?: string;
 }) {
+  const t = uiByLocale[locale];
   return (
     <Card className={cn("px-10 py-6", className)}>
       <div className="flex flex-col items-center gap-4">
@@ -44,14 +47,18 @@ export default function PersonalInfoCard({
 
         {/* descripcion */}
         <div className="flex flex-col gap-2">
-          <h3 className="text-white font-opensans text-sm">Descripción:</h3>
+          <h3 className="text-white font-opensans text-sm">
+            {t.personalDescription}
+          </h3>
           <p className="text-card-foreground font-opensans text-2xs">
             {personalInfo.shortDescription}
           </p>
         </div>
         {/* especializacion */}
         <div className="flex flex-col gap-2">
-          <h3 className="text-white font-opensans text-sm">Especialización:</h3>
+          <h3 className="text-white font-opensans text-sm">
+            {t.personalSpecialization}
+          </h3>
           <p className="text-card-foreground font-opensans text-2xs">
             {personalInfo.specialization}
           </p>
@@ -78,7 +85,7 @@ export default function PersonalInfoCard({
         </div>
         <Link href={`/${locale}#contact`} className="w-full">
           <Button variant="highlight" className="w-full">
-            TRABAJEMOS JUNTOS
+            {t.letsWorkTogether.toUpperCase()}
           </Button>
         </Link>
       </div>

@@ -3,6 +3,8 @@ import ExperienceType from "@/data/types/experience";
 import ProjectType from "@/data/types/project";
 import ProjectCard from "./ProjectCard";
 import { isEmpty } from "lodash";
+import { Locale } from "@/i18n/locales";
+import { uiByLocale } from "@/i18n/ui";
 
 export default function ExperienceData({
   experience,
@@ -12,9 +14,10 @@ export default function ExperienceData({
 }: {
   experience: ExperienceType;
   projects: ProjectType[];
-  locale: string;
+  locale: Locale;
   className?: string;
 }) {
+  const t = uiByLocale[locale];
   const assignedProjects = projects.filter((project) =>
     experience.projects.includes(project.id)
   );
@@ -40,7 +43,7 @@ export default function ExperienceData({
       {!isEmpty(experience.responsibilities) && (
         <>
           <h4 className="text-sm font-inter text-white font-bold">
-            RESPONSABILIDADES
+            {t.responsibilities.toUpperCase()}
           </h4>
           {experience.responsibilities?.map((responsibility) => (
             <p
@@ -53,7 +56,7 @@ export default function ExperienceData({
         </>
       )}
       <h4 className="text-sm font-inter text-white font-bold">
-        PROYECTOS ASIGNADOS
+        {t.assignedProjects.toUpperCase()}
       </h4>
 
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,26rem)] gap-8">
