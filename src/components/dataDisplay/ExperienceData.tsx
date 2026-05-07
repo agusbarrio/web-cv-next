@@ -7,10 +7,12 @@ import { isEmpty } from "lodash";
 export default function ExperienceData({
   experience,
   projects,
+  locale,
   className,
 }: {
   experience: ExperienceType;
   projects: ProjectType[];
+  locale: string;
   className?: string;
 }) {
   const assignedProjects = projects.filter((project) =>
@@ -59,6 +61,7 @@ export default function ExperienceData({
           <ProjectCard
             key={project.id}
             project={project}
+            locale={locale}
             className="w-full md:w-104 h-104"
           />
         ))}

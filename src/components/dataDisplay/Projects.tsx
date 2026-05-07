@@ -5,9 +5,11 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects({
   projects,
+  locale,
   className,
 }: {
   projects: ProjectType[];
+  locale: string;
   className?: string;
 }) {
   const personalProjects = projects.filter(
@@ -21,6 +23,7 @@ export default function Projects({
           <ProjectCard
             key={project.id}
             project={project}
+            locale={locale}
             className="w-full md:w-auto h-104"
           />
         ))}

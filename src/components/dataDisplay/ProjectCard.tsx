@@ -6,9 +6,11 @@ import { cn } from "@/lib/utils";
 
 export default function ProjectCard({
   project,
+  locale,
   className,
 }: {
   project: ProjectType;
+  locale: string;
   className?: string;
 }) {
   return (
@@ -40,7 +42,7 @@ export default function ProjectCard({
         </h3>
         <p className="text-sm font-opensans">{project.description}</p>
         <div className="flex gap-4 mt-4">
-          <Link href={`/projects/${project.id}`}>
+          <Link href={`/${locale}/projects/${project.id}`}>
             <Button variant="highlight" className="mt-0 md:mt-4">
               VER MÁS
             </Button>

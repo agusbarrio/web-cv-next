@@ -8,9 +8,11 @@ import Link from "next/link";
 
 export default function PersonalInfoCard({
   personalInfo,
+  locale,
   className,
 }: {
   personalInfo: PersonalInfoType;
+  locale: string;
   className?: string;
 }) {
   return (
@@ -74,7 +76,7 @@ export default function PersonalInfoCard({
             </a>
           </div>
         </div>
-        <Link href="/#contact" className="w-full">
+        <Link href={`/${locale}#contact`} className="w-full">
           <Button variant="highlight" className="w-full">
             TRABAJEMOS JUNTOS
           </Button>

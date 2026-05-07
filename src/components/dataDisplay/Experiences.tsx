@@ -8,10 +8,12 @@ import { Fragment } from "react";
 export default function Experiences({
   experiences,
   projects,
+  locale,
   className,
 }: {
   experiences: ExperienceType[];
   projects: ProjectType[];
+  locale: string;
   className?: string;
 }) {
   return (
@@ -23,6 +25,7 @@ export default function Experiences({
             <ExperienceData
               experience={experience}
               projects={projects}
+              locale={locale}
               className="w-full"
             />
             {index !== array.length - 1 && (

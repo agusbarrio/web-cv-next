@@ -4,14 +4,15 @@ import { Squash as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { Button } from "../button";
 
-export default function Header() {
+export default function Header({ locale }: { locale: string }) {
+  const basePath = `/${locale}`;
   const links = [
-    { label: "Sobre mi", href: `${process.env.NEXT_PUBLIC_URL}#about` },
-    { label: "Experiencia", href: `${process.env.NEXT_PUBLIC_URL}#experience` },
-    { label: "Proyectos", href: `${process.env.NEXT_PUBLIC_URL}#projects` },
-    { label: "Habilidades", href: `${process.env.NEXT_PUBLIC_URL}#skills` },
-    { label: "Educación", href: `${process.env.NEXT_PUBLIC_URL}#education` },
-    { label: "Contacto", href: `${process.env.NEXT_PUBLIC_URL}#contact` },
+    { label: "Sobre mi", href: `${basePath}#about` },
+    { label: "Experiencia", href: `${basePath}#experience` },
+    { label: "Proyectos", href: `${basePath}#projects` },
+    { label: "Habilidades", href: `${basePath}#skills` },
+    { label: "Educación", href: `${basePath}#education` },
+    { label: "Contacto", href: `${basePath}#contact` },
   ];
   const [isOpen, setIsOpen] = useState(false);
 
