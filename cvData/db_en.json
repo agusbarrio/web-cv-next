@@ -13,7 +13,7 @@
     "location": "Ramos Mejía, Buenos Aires, Argentina",
     "nativeLanguage": "Spanish",
     "englishLevel": "BASIC",
-    "linkedin": "https://www.linkedin.com/in/agustin-adolfo-barrio-eastman",
+    "linkedin": "https://www.linkedin.com/in/agustin-adolfo-barrio-eastman/?locale=en-US",
     "github": "https://github.com/agusbarrio",
     "birthDate": "2000-06-12",
     "description": "Backend Developer specialized in Node.js, focused on the design and development of APIs, data management, and deployment of systems in production environments.\nI have experience building real-world solutions, including microservices, process automation, and service integrations.\nI work with SQL and NoSQL databases depending on the use case, and deploy applications using Docker on VPS servers, managing QA and production environments.\nI also have frontend experience (React / Next.js), which allows me to design complete end-to-end solutions.",
@@ -44,15 +44,8 @@
       "position": "Software Developer",
       "startDate": "2022-06",
       "description": "Application development focused on backend, systems architecture, and infrastructure.",
-      "projects": [
-        "clara",
-        "hubeet"
-      ],
-      "technologies": [
-        "js",
-        "ts",
-        "docker"
-      ],
+      "projects": ["clara", "hubeet"],
+      "technologies": ["js", "ts", "docker"],
       "responsibilities": [
         "Development of REST and GraphQL APIs with Node.js (Express, NestJS)",
         "Implementation of business logic and microservices",
