@@ -493,14 +493,6 @@
   ],
   "educations": [
     {
-      "id": "utn",
-      "institution": "Universidade Tecnológica Nacional",
-      "program": "Engenharia em Sistemas de Informação",
-      "description": "Curso universitário focado no desenvolvimento de habilidades técnicas e teóricas em sistemas de informação, incluindo programação, matemática, física e sistemas operacionais.",
-      "startDate": "2025-03",
-      "type": "UNIVERSITY"
-    },
-    {
       "id": "codo-a-codo",
       "institution": "Codo a Codo - GCBA",
       "program": "Desenvolvimento Web Full Stack",

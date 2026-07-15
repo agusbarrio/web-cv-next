@@ -493,14 +493,6 @@
   ],
   "educations": [
     {
-      "id": "utn",
-      "institution": "National Technological University",
-      "program": "Information Systems Engineering",
-      "description": "University degree focused on developing technical and theoretical skills in information systems, including programming, mathematics, physics, and operating systems.",
-      "startDate": "2025-03",
-      "type": "UNIVERSITY"
-    },
-    {
       "id": "codo-a-codo",
       "institution": "Codo a Codo - GCBA",
       "program": "Full Stack Web Development",

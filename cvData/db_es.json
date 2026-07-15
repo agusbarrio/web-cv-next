@@ -493,14 +493,6 @@
   ],
   "educations": [
     {
-      "id": "utn",
-      "institution": "Universidad Tecnológica Nacional",
-      "program": "Ingeniería en sistemas de información",
-      "description": "Carrera universitaria enfocada en el desarrollo de habilidades técnicas y teóricas en sistemas informáticos, incluyendo programación, matemáticas, física y sistemas operativos.",
-      "startDate": "2025-03",
-      "type": "UNIVERSITY"
-    },
-    {
       "id": "codo-a-codo",
       "institution": "Codo a Codo - GCBA",
       "program": "Desarrollo Web Full Stack",
