@@ -3,12 +3,12 @@
     "heroVideoDesktop": "https://agusbarrio.github.io/media-contents/public/videos/video.mp4",
     "heroVideoMobile": "https://agusbarrio.github.io/media-contents/public/videos/movil-video.mp4",
     "logo": "https://agusbarrio.github.io/media-contents/public/logos/logo-fondo.png",
-    "metaDescription": "Backend Developer especializado en Node.js, APIs REST y sistemas escalables. Experiencia en Docker, microservicios, IoT y despliegue en producción.",
+    "metaDescription": "Desarrollador Full Stack especializado en Node.js, React y TypeScript. Experiencia construyendo aplicaciones web escalables, APIs, microservicios, despliegues con Docker y soluciones IoT.",
     "googleAnalyticsId": "G-37WEKRTK83"
   },
   "personalInfo": {
     "fullName": "Agustín Barrio",
-    "profession": "Backend Developer (Node.js)",
+    "profession": "Desarrollador Full Stack (Node.js / React / TypeScript)",
     "email": "agusbarrioeastman@gmail.com",
     "location": "Ramos Mejía, Buenos Aires, Argentina",
     "nativeLanguage": "Español",
@@ -16,12 +16,12 @@
     "linkedin": "https://www.linkedin.com/in/agustin-adolfo-barrio-eastman",
     "github": "https://github.com/agusbarrio",
     "birthDate": "2000-06-12",
-    "description": "Backend Developer especializado en Node.js, enfocado en el diseño y desarrollo de APIs, manejo de datos y despliegue de sistemas en entornos productivos.\nCuento con experiencia desarrollando soluciones reales, incluyendo microservicios, automatización de procesos e integración de servicios.\nTrabajo con bases de datos SQL y NoSQL según el caso de uso, y despliego aplicaciones utilizando Docker en servidores VPS, gestionando entornos QA y producción.\nTambién tengo experiencia en frontend (React / Next.js), lo que me permite diseñar soluciones completas de extremo a extremo.",
-    "shortDescription": "Backend Developer con experiencia en APIs, microservicios, Docker y sistemas en producción.",
-    "specialization": "Node.js, TypeScript, APIs REST, SQL/NoSQL, Docker, microservicios, infraestructura en VPS.",
+    "description": "Desarrollador Full Stack especializado en Node.js, React y TypeScript, enfocado en construir aplicaciones web escalables, APIs y sistemas listos para producción.\nCuento con experiencia diseñando arquitecturas backend, microservicios, automatización de procesos e integración de servicios, además de desarrollar interfaces frontend modernas.\nTrabajo con bases de datos SQL y NoSQL según el caso de uso, y despliego aplicaciones utilizando Docker en entornos VPS con flujos de QA y producción.\nTambién desarrollo soluciones IoT combinando software, infraestructura y comunicación con dispositivos.",
+    "shortDescription": "Desarrollador Full Stack con experiencia en Node.js, React, APIs, microservicios, Docker y sistemas en producción.",
+    "specialization": "Node.js, TypeScript, React, Next.js, APIs REST, SQL/NoSQL, Docker, microservicios, infraestructura en VPS.",
     "image": "https://agusbarrio.github.io/media-contents/public/images/yo-2.png",
     "logo": "https://agusbarrio.github.io/media-contents/public/logos/logo-web-blanco.svg",
-    "curriculumFileUrl": "https://agusbarrio.github.io/media-contents/public/files/AgustinBarrio_Backend.pdf"
+    "curriculumFileUrl": "https://agusbarrio.github.io/media-contents/public/files/AgustinBarrio_Full_Stack_ES.pdf"
   },
   "hobbies": [
     {
@@ -43,17 +43,16 @@
       "company": "Solúnika",
       "position": "Desarrollador de Software",
       "startDate": "2022-06",
-      "description": "Desarrollo de aplicaciones con foco en backend, arquitectura de sistemas e infraestructura.",
+      "description": "Desarrollo de aplicaciones Full Stack con foco en backend, arquitectura de sistemas, integración frontend e infraestructura.",
       "projects": ["clara", "hubeet"],
-      "technologies": ["js", "ts", "docker"],
+      "technologies": ["js", "ts", "node", "react", "nextjs", "docker"],
       "responsibilities": [
-        "Desarrollo de APIs REST y GraphQL con Node.js (Express, NestJS)",
-        "Implementación de lógica de negocio y microservicios",
-        "Modelado y optimización de bases de datos",
-        "Implementación de caché con Redis",
-        "Gestión de infraestructura en VPS",
-        "Configuración de Nginx como reverse proxy",
-        "Automatización de despliegues con Docker y CI/CD"
+        "Desarrollo de APIs REST y GraphQL robustas utilizando Node.js (Express, NestJS).",
+        "Implementación de lógica de negocio, microservicios e integraciones interactivas con servicios de terceros.",
+        "Desarrollo de interfaces modulares y responsivas con React, Next.js y Microfrontends (Module Federation).",
+        "Diseño, modelado y optimización de bases de datos relacionales y NoSQL.",
+        "Implementación de estrategias de caché con Redis para optimizar tiempos de respuesta y reducir la carga de la base de datos.",
+        "Gestión de infraestructura en servidores Cloud VPS, configuración de Nginx como proxy inverso y automatización con Docker y GitLab CI/CD."
       ],
       "url": "https://www.solunika.com/"
     }
