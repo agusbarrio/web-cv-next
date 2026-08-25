@@ -183,7 +183,6 @@
         "Advanced management of organizations and elevators by administrators.",
         "Intuitive real-time data visualization for end users."
       ],
-      "link": "https://elevators-control.vercel.app",
       "startDate": "2024-08",
       "image": "https://agusbarrio.github.io/media-contents/public/projects/elevators-control/image.png",
       "imageHover": "https://agusbarrio.github.io/media-contents/public/projects/elevators-control/hover.png",
@@ -225,7 +224,6 @@
         "Registration and management of organizations, courses, and students.",
         "Tool for teachers to take attendance through unique links and secure credentials."
       ],
-      "link": "https://edu-organizer-qa.vercel.app/",
       "startDate": "2023-07",
       "endDate": "2024-05",
       "image": "https://agusbarrio.github.io/media-contents/public/projects/edu-organizer/image.png",

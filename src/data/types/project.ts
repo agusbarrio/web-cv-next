@@ -11,11 +11,11 @@ export default interface ProjectType {
   status: string;
   technologies: string[];
   features?: string[];
-  link: string;
+  link?: string;
   startDate: string;
   endDate?: string;
   logo?: string;
   image: string;
   imageHover: string;
-  imagePlatform: string;
+  imagePlatform?: string;
 }

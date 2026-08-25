@@ -50,11 +50,13 @@ export default function ProjectCard({
               {t.viewMore.toUpperCase()}
             </Button>
           </Link>
-          <a href={project.link} target="_blank">
-            <Button variant="highlight" className="mt-0 md:mt-4">
-              {t.platform.toUpperCase()}
-            </Button>
-          </a>
+          {project.link && (
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <Button variant="highlight" className="mt-0 md:mt-4">
+                {t.platform.toUpperCase()}
+              </Button>
+            </a>
+          )}
         </div>
       </div>
     </div>

@@ -73,7 +73,7 @@
         "Implementación de sistemas de caché con Redis para mejorar tiempos de respuesta y reducir carga en la base de datos.",
         "Administración de infraestructura en VPS.",
         "Configuración e implementación de pipelines CI/CD con Docker y GitLab CI/CD para automatizar despliegues.",
-        "Configuración y uso de Nginx como reverse proxy para exponer servicios, enrutar tráfi co y mejorar la seguridad."
+        "Configuración y uso de Nginx como reverse proxy para exponer servicios, enrutar tráfico y mejorar la seguridad."
       ],
       "status": "PRODUCTION",
       "technologies": [
@@ -183,7 +183,6 @@
         "Gestión avanzada de organizaciones y ascensores por parte de los administradores.",
         "Visualización intuitiva de datos en tiempo real para usuarios finales."
       ],
-      "link": "https://elevators-control.vercel.app",
       "startDate": "2024-08",
       "image": "https://agusbarrio.github.io/media-contents/public/projects/elevators-control/image.png",
       "imageHover": "https://agusbarrio.github.io/media-contents/public/projects/elevators-control/hover.png",
@@ -225,7 +224,6 @@
         "Registro y gestión de organizaciones, cursos y estudiantes.",
         "Herramienta para que profesores tomen asistencia mediante enlaces únicos y credenciales seguras."
       ],
-      "link": "https://edu-organizer-qa.vercel.app/",
       "startDate": "2023-07",
       "endDate": "2024-05",
       "image": "https://agusbarrio.github.io/media-contents/public/projects/edu-organizer/image.png",
